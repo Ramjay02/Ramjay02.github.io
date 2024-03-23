@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Valencia City, Bukidnon</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#discover" class="nav__link">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#place" class="nav__link">Mayors</a>
+                    </li>
+                </ul>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <img src="cariis.jpg" class="home__img">
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__data-subtitle">Discover your place</span>
+                    <h1 class="home__data-title">Explore The <br> <b>Beauty of <br> Valencia City</b></h1>
+                    <a href="#about" class="button">Explore</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/LGUCityofValencia" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-box-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h1 class="section__title about__title">Origin</h1>
+                    <p class="about__description">The territory that now comprises the city of Valencia is combined from
+                        thirteen barangays of Malaybalay.<br>
+                        The earliest inhabitants in the area, presently comprising part of the Poblacion, were Bukidnon
+                        natives who founded a settlement<br>
+                        along the banks of Pulangi River and the confluence of the Dumanggas River. The pioneers were
+                        led by Darwin Dumanggas Manangkila together with the families of the Binalhays, Laugas,
+                        Dongogans, Gua-ans, Lanayans, and the Arenzos. The first site of the settlement was a sitio
+                        named "Panglibatuhan" because the area was thickly forested by tree species called by the
+                        natives as "Malibato trees".
+                        <br><br>In 1911, a one-room barrio school was opened, and its first teacher was the late Leon
+                        Galorport. The school site is approximately the present location of the Poblacion Barangay High
+                        School. Galorport, who came from his hometown, Valencia, Bohol named the school "Valencia
+                        School". When the sitio became a barrio of Malaybalay, the residents agreed to name it
+                        "Valencia". Finally, when the southern portion of Malaybalay was separated as a new
+                        municipality, the petitioners agreed to name the municipality as "Valencia". However, the use of
+                        the name "Valencia" is already seen in Spanish documents in 1893 or even earlier which places it
+                        under the jurisdiction of Linabo or Sevilla (now Mailag) in the Province of Misamis.
+                        <br><br>The rich natural resources found in the territory eventually attracted Christian
+                        settlers from the highly populated coastal areas of Mindanao, Visayas and Luzon islands.
+                    </p>
+                </div>
+
+                <div class="about__img experience__img grid">
+                    <div class="about__img-overlay">
+                        <img src="aboutpic.jpg" alt="" class="experience__img-one">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== DISCOVER ====================-->
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Discover the most <br> attractive<br> Tourist Spots</h2>
+
+            <div class="discover__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== DISCOVER 1 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="lakeapo.jpg" alt="" class="discover__img">
+                        <div>
+                            <h2 class="experience__number">Lake Apo</h2>
+                            <span class="experience__description">Lake Apo Sitio Lowa, Barangay Guinoyuran</span>
+                        </div>
+                    </div>
+
+                    <!--==================== DISCOVER 2 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="malingonfalls2.jpg" alt="" class="discover__img">
+                        <div>
+                            <h2 class="experience__number">malingon Falls</h2>
+                            <span class="experience__description">MVC, Mt Nebo</span>
+                        </div>
+                    </div>
+
+                    <!--==================== DISCOVER 3 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="sagumata.jpg" alt="" class="discover__img">
+                        <div>
+                            <h2 class="experience__number">Sagumata Falls</h2>
+                            <span class="experience__description">Purok 3, Barangay Lourdes</span>
+                        </div>
+                    </div>
+
+                    <!--==================== DISCOVER 4 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="Alamay_Falls.jpg" alt="" class="discover__img">
+                        <div>
+                            <h2 class="experience__number">Alamay Falls</h2>
+                            <span class="experience__description">Tandacol, Lilingayon</span>
+                        </div>
+                    </div>
+
+                    <!--==================== DISCOVER 5 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="salawocave.jpg" alt="" class="discover__img">
+                        <div>
+                            <h2 class="experience__number">Salawo Cave</h2>
+                            <span class="experience__description">Barangay Concepcion</span>
+                        </div>
+                    </div>
+
+                    <!--==================== DISCOVER 6 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="cariis.jpg" alt="" class="discover__img">
+                        <div>
+                            <h2 class="experience__number">Cariis Falls</h2>
+                            <span class="experience__description">Barangay Concepcion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== EXPERIENCE ====================-->
+        <section class="experience section" id="experience">
+            
+            <img src="banner_2022_2.jpg">
+
+            <div class="experience__container container grid">
+                <div class="about__data">
+                    <h1 class="section__title about__title">FESTIVALS & EVENTS</h1>
+                    <p class="about__description">
+                        The <b>City Charter Day</b> (Golden Harvest Festival) is a celebration commemorating the cityhood of Valencia. 
+                        It is held annually every January 6 and is organized by the Local Government Unit of Valencia.<br><br>
+                        The Valencia City <b>Parochial Fiesta</b>, organized by the San Agustin Parish, 
+                        in collaboration with private sectors and Local Government Unit, 
+                        is a Roman Catholic celebration of the feast of St. Augustine. 
+                        It is celebrated every August 28, 
+                        co-celebrating the feast day with Cagayan de Oro.<br><br>
+                        The <b>Panlalawaig Ta Pulangui Festival</b> is the celebration of the waters of Pulangi River, 
+                        through a fluvial parade. It is celebrated in honor of the people of Valencia, 
+                        the river that nourishes the land, and the bamboo raft that strengthened the bond of the land to its people. 
+                        The festival is a four-day affair that ends every second Saturday of January in celebration of its City Charter, 
+                        homage to its founders and as a tribute to its hardworking people.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!--==================== PLACES ====================-->
+        <section class="place section" id="place">
+            <h1 class="section__title">Mayors of Valencia</h1>
+            <div class="video-container container">
+                <img src="Hail_to_the_Chiefs.jpg">
+            </div>      
+        </section>
+
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2023-2024 | All rights reserved.</p>
+                <p class="footer__copy">CLINT JAY A. RAMAYRAT</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+</body>
+
+</html>
