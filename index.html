@@ -1,243 +1,490 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="logo.png" type="image/png">
 
-    <link rel="shortcut icon" href="logo.png" type="image/png">
-
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="swiper-bundle.min.css">
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Valencia City, Bukidnon</title>
-</head>
-
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo"></a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#discover" class="nav__link">Discover</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#experience" class="nav__link">Experience</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#place" class="nav__link">Mayors</a>
-                    </li>
-                </ul>
-
-                <div class="nav__dark">
-                    <!-- Theme change button -->
-                    <span class="change-theme-name">Dark mode</span>
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-                </div>
-
-                <i class="ri-close-line nav__close" id="nav-close"></i>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
-            </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home" id="home">
-            <img src="cariis.jpg" class="home__img">
-
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <span class="home__data-subtitle">Discover your place</span>
-                    <h1 class="home__data-title">Explore The <br> <b>Beauty of <br> Valencia City</b></h1>
-                    <a href="#about" class="button">Explore</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.facebook.com/LGUCityofValencia" target="_blank" class="home__social-link">
-                        <i class="ri-facebook-box-fill"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <div class="about__data">
-                    <h1 class="section__title about__title">Origin</h1>
-                    <p class="about__description">The territory that now comprises the city of Valencia is combined from
-                        thirteen barangays of Malaybalay.<br>
-                        The earliest inhabitants in the area, presently comprising part of the Poblacion, were Bukidnon
-                        natives who founded a settlement<br>
-                        along the banks of Pulangi River and the confluence of the Dumanggas River. The pioneers were
-                        led by Darwin Dumanggas Manangkila together with the families of the Binalhays, Laugas,
-                        Dongogans, Gua-ans, Lanayans, and the Arenzos. The first site of the settlement was a sitio
-                        named "Panglibatuhan" because the area was thickly forested by tree species called by the
-                        natives as "Malibato trees".
-                        <br><br>In 1911, a one-room barrio school was opened, and its first teacher was the late Leon
-                        Galorport. The school site is approximately the present location of the Poblacion Barangay High
-                        School. Galorport, who came from his hometown, Valencia, Bohol named the school "Valencia
-                        School". When the sitio became a barrio of Malaybalay, the residents agreed to name it
-                        "Valencia". Finally, when the southern portion of Malaybalay was separated as a new
-                        municipality, the petitioners agreed to name the municipality as "Valencia". However, the use of
-                        the name "Valencia" is already seen in Spanish documents in 1893 or even earlier which places it
-                        under the jurisdiction of Linabo or Sevilla (now Mailag) in the Province of Misamis.
-                        <br><br>The rich natural resources found in the territory eventually attracted Christian
-                        settlers from the highly populated coastal areas of Mindanao, Visayas and Luzon islands.
-                    </p>
-                </div>
-
-                <div class="about__img experience__img grid">
-                    <div class="about__img-overlay">
-                        <img src="aboutpic.jpg" alt="" class="experience__img-one">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== DISCOVER ====================-->
-        <section class="discover section" id="discover">
-            <h2 class="section__title">Discover the most <br> attractive<br> Tourist Spots</h2>
-
-            <div class="discover__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--==================== DISCOVER 1 ====================-->
-                    <div class="discover__card swiper-slide">
-                        <img src="lakeapo.jpg" alt="" class="discover__img">
-                        <div>
-                            <h2 class="experience__number">Lake Apo</h2>
-                            <span class="experience__description">Lake Apo Sitio Lowa, Barangay Guinoyuran</span>
-                        </div>
-                    </div>
-
-                    <!--==================== DISCOVER 2 ====================-->
-                    <div class="discover__card swiper-slide">
-                        <img src="malingonfalls2.jpg" alt="" class="discover__img">
-                        <div>
-                            <h2 class="experience__number">malingon Falls</h2>
-                            <span class="experience__description">MVC, Mt Nebo</span>
-                        </div>
-                    </div>
-
-                    <!--==================== DISCOVER 3 ====================-->
-                    <div class="discover__card swiper-slide">
-                        <img src="sagumata.jpg" alt="" class="discover__img">
-                        <div>
-                            <h2 class="experience__number">Sagumata Falls</h2>
-                            <span class="experience__description">Purok 3, Barangay Lourdes</span>
-                        </div>
-                    </div>
-
-                    <!--==================== DISCOVER 4 ====================-->
-                    <div class="discover__card swiper-slide">
-                        <img src="Alamay_Falls.jpg" alt="" class="discover__img">
-                        <div>
-                            <h2 class="experience__number">Alamay Falls</h2>
-                            <span class="experience__description">Tandacol, Lilingayon</span>
-                        </div>
-                    </div>
-
-                    <!--==================== DISCOVER 5 ====================-->
-                    <div class="discover__card swiper-slide">
-                        <img src="salawocave.jpg" alt="" class="discover__img">
-                        <div>
-                            <h2 class="experience__number">Salawo Cave</h2>
-                            <span class="experience__description">Barangay Concepcion</span>
-                        </div>
-                    </div>
-
-                    <!--==================== DISCOVER 6 ====================-->
-                    <div class="discover__card swiper-slide">
-                        <img src="cariis.jpg" alt="" class="discover__img">
-                        <div>
-                            <h2 class="experience__number">Cariis Falls</h2>
-                            <span class="experience__description">Barangay Concepcion</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== EXPERIENCE ====================-->
-        <section class="experience section" id="experience">
-            
-            <img src="banner_2022_2.jpg">
-
-            <div class="experience__container container grid">
-                <div class="about__data">
-                    <h1 class="section__title about__title">FESTIVALS & EVENTS</h1>
-                    <p class="about__description">
-                        The <b>City Charter Day</b> (Golden Harvest Festival) is a celebration commemorating the cityhood of Valencia. 
-                        It is held annually every January 6 and is organized by the Local Government Unit of Valencia.<br><br>
-                        The Valencia City <b>Parochial Fiesta</b>, organized by the San Agustin Parish, 
-                        in collaboration with private sectors and Local Government Unit, 
-                        is a Roman Catholic celebration of the feast of St. Augustine. 
-                        It is celebrated every August 28, 
-                        co-celebrating the feast day with Cagayan de Oro.<br><br>
-                        The <b>Panlalawaig Ta Pulangui Festival</b> is the celebration of the waters of Pulangi River, 
-                        through a fluvial parade. It is celebrated in honor of the people of Valencia, 
-                        the river that nourishes the land, and the bamboo raft that strengthened the bond of the land to its people. 
-                        The festival is a four-day affair that ends every second Saturday of January in celebration of its City Charter, 
-                        homage to its founders and as a tribute to its hardworking people.
-                    </p>
-                </div>
-            </div>
-        </section>
-
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
 
-        <!--==================== PLACES ====================-->
-        <section class="place section" id="place">
-            <h1 class="section__title">Mayors of Valencia</h1>
-            <div class="video-container container">
-                <img src="Hail_to_the_Chiefs.jpg">
-            </div>      
-        </section>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Dipolog City</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo"></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Places</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">Experience</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <video id="video-file" class="home__img" autoplay loop muted>
+                    <source src="SLIDEVID.mp4" type="video/mp4">
+                </video>
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__data-title">Explore The <br> Beautiful <br><b style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;">Dipolog City</b></h1>
+                        <a href="#about" class="button">Explore</a>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://web.facebook.com/DipologCityGovernment" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dipologcitygovernment/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">Best Places To Visit</span>
+                            <a href="#discover" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <a href="#discover"><img src="boulevard.jpg" alt="" class="home__info-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">History</h2>
+                        <p class="about__description">Dipolog’s earliest recorded history started in 1834 when a 
+                            civil government was organized by the Spanish Provincial government of Misamis, under 
+                            whose jurisdiction we then belonged, with the appointment of a “Captain” as town 
+                            executive, ‘Teniente’ and an ‘Aguacil’ to maintain law and order. Don Domingo Ruiz, 
+                            a native, was the town executive that year when the town site transferred from Sitio 
+                            Tulwanan to where it is now.<br><br>
+                            Tradition says that in that year, a Spanish Recollect Missionary arrived in Tulwanan 
+                            believing that the townsite was still there. Upon meeting a native, asked: “Donde esta 
+                            el Capitan?” (Where is the captain?) Our unknown hero, understanding only word ‘capitan’ 
+                            pointed to the west and said in Subano “Di. . .pag,” meaning ‘across the river’. Guided 
+                            by his ‘muchacho’, a Tagalog boy named Antonio Subido, the Padre proceeded downriver and 
+                            upon reaching the townsite named the place “Dipag”. Through the years, this was corrupted 
+                            by mispronunciation and intermingling of Visayan and Subano words into what it is today “Dipolog”.
+                        </p>
+                    </div>
+                    
+                    <div class="about__img">
+                        
+                        <div class="about__img-overlay">
+                            <img src="church.jpg" alt="Dipag History" class="about__img-two">
+                        </div>
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Discover the most <br> attractive places</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="cathedral.jpg" alt="Cathedral of Our Lady of the Most Holy Rosary" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Cathedral of Our Lady of the Most Holy Rosary</h2>
+                                <span class="discover__description">The Cathedral of Our Lady of the Most Holy 
+                                    Rosary is one of the favorite tourist destinations in Dipolog City because it 
+                                    is designed by our one and only national hero, Dr. Jose Rizal. It is said that 
+                                    the church was established sometime in the year 1895 and that Dr. Jose Rizal 
+                                    himself designed the altar.</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="boulevard.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Dipolog Sunset Boulevard</h2>
+                                <span class="discover__description">Who wouldn’t love to witness the captivating 
+                                    scenery of the setting sun, right? If Manila has the famous Roxas Boulevard, 
+                                    then Dipolog City has the Dipolog Sunset Boulevard! That’s right, and it is 
+                                    directly facing the beautiful Sulu Sea. Yep, you’ll get to enjoy that fresh 
+                                    and clean sea breeze while having a picnic with your special someone!</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="marker.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sta. Cruz Marker</h2>
+                                <span class="discover__description">Located in Dipolog City is the oldest landmark 
+                                    of Christianity. It is also the oldest landmark of the city, situated on one of 
+                                    its oldest streets. It is said that the cross was erected to commemorate the 
+                                    time when Boholanos first landed in the city and called it their home. Hence, 
+                                    the beautiful city of Dipolog was born.</span>
+                            </div>
+                        </div>
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="linabo.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">3003 Steps to Linabo Peak</h2>
+                                <span class="discover__description">From the peak you have a 360-degree view of the 
+                                    twin cities. I suggest you start your climb early morning, around 6 am on a 
+                                    weekend so by 9 am you would reach the top where telcos and national TV stations 
+                                    have their repeater antennas.Bring bottles of water and food since there are no 
+                                    restaurants there. A consolation is that there are stores at the foot and near 
+                                    the peak in the vicinity of the Lugdungan elementary school.But bring along your 
+                                    garbage after your picnic at the top.</span>
+                            </div>
+                        </div>
+
+                        
+                        <!--==================== DISCOVER 5 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="museo.jpg" alt="" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">Museo Dipolog</h2>
+                                <span class="discover__description">Beautiful building. Attended an art exhibit on 
+                                    the second floor. Ample space with clean washroom. There is an art workshop going 
+                                    on at the time of our visit. It is free to visit. Other than this, there's nothing 
+                                    much to see but it's worthwhile to check out the cathedral, city hall and plaza 
+                                    Magsaysay nearby.</span>
+                            </div>
+                        </div>
+                        <!--==================== DISCOVER 6 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="magsaysay.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Magsaysay Park</h2>
+                                <span class="discover__description">You should also relax and appreciate the beauty 
+                                    of the city center here at Magsaysay Park. Explore around the city and discover 
+                                    hidden gems such as restaurants, cafes, shops, and all. You could also meet 
+                                    different people and learn more about the city’s rich culture and history!</span>
+                            </div>
+                        </div>
+                        <!--==================== DISCOVER 7 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="aliguay.jpg" alt="" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">Aliguay Island</h2>
+                                <span class="discover__description">Ah, since you’re already in Dipolog City, you 
+                                    also shouldn’t miss the chance to visit the famous Aliguay Island! It is a very 
+                                    remote location in Zamboanga Del Norte, offering some of the most exciting and 
+                                    relaxing experiences for tourists! Get to witness the pristine and crystal clear 
+                                    waters of a white sand beach where you can also enjoy some water sports activities 
+                                    and feast on fresh seafood caught by the locals!</span>
+                            </div>
+                        </div>
+                        <!--==================== DISCOVER 8 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="sunkilaw.jpg" alt="" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">Sungkilaw Falls</h2>
+                                <span class="discover__description">Next up is another favorite tourist destination 
+                                    located at the farthest barangay from the city. But don’t worry! I assure you 
+                                    that it’s definitely going to be worth it. Sungkilaw Falls is a 20-foot high 
+                                    waterfall where tourists love to take a dip and even dive too! The water here is 
+                                    clean and cold, so it’s a perfect summer destination for the locals. There are 
+                                    also tons of exciting activities that tourists love to do here, so be sure to 
+                                    drop by!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
-    </main>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div class="footer__rights">
-                <p class="footer__copy">&#169; 2023-2024 | All rights reserved.</p>
-                <p class="footer__copy">CLINT JAY A. RAMAYRAT</p>
+            <!--==================== !!!DONT TOUCH!!! ====================-->
+            <section class="">
+                <h2 class=""></h2>
+
+                <div class="">
+                    <p class="video__description">
+                    </p>
+
+                    <div class="">
+                        <video id="video-play" loop>
+                            <source src="" type="video/mp4">
+                        </video>
+
+                        <button class="" id="video-button">
+                            <i class="" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== RESTAURANTS ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Choose Your Place To Eat</h2>
+
+                <div class="place__container co ntainer grid">
+
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <a href="https://www.google.com/maps/dir//H8PR%2BJWR,+SW+Corner+of+Rival+Ave+and+Osmena+St.,+Rizal+Ave,+Dipolog+City,+Zamboanga+del+Norte/@8.5866132,123.2598643,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3254960eda58744b:0xcd2fd6b76cd08d9c!2m2!1d123.3422754!2d8.5866747?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+                            <img src="place2.jpg" alt="" class="place__img">
+                        
+                            <div class="place__content">
+                                <span class="place__rating">
+                                    <i class="ri-star-line place__rating-icon"></i>
+                                    <span class="place__rating-number">3.9</span>
+                                </span>
+
+                                <div class="place__data">
+                                    <h3 class="place__title">Tonino's Resto and Wine Bar</h3>
+                                    <span class="place__price">(065) 212 1256</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <a href="https://www.google.com/maps/dir/8.1494016,123.8401024/C+%26+L+Seaview+Hotel+dipolog/@8.3102605,123.2577178,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3254960dc8eb6ad9:0xb5d410051e08c243!2m2!1d123.3395121!2d8.5840138?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+                            <img src="place3.jpg" alt="" class="place__img">
+                        
+                            <div class="place__content">
+                                <span class="place__rating">
+                                    <i class="ri-star-line place__rating-icon"></i>
+                                    <span class="place__rating-number">5.0</span>
+                                </span>
+    
+                                <div class="place__data">
+                                    <h3 class="place__title">C & L Seaview Hotel</h3>
+                                    <span class="place__price">(065) 908 2609</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <a href="https://maps.google.com/maps?saddr=&daddr=Dipolog%20City%20Boulevard,%20Dipolog,%20Mindanao%207100%20Philippines">
+                            <img src="place4.jpg" alt="" class="place__img">
+                        
+                            <div class="place__content">
+                                <span class="place__rating">
+                                    <i class="ri-star-line place__rating-icon"></i>
+                                    <span class="place__rating-number">4.3</span>
+                                </span>
+    
+                                <div class="place__data">
+                                    <h3 class="place__title">Dipolog City Boulevard Barbeque Stalls                                </h3>
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <a href="https://www.google.com/maps/dir//Quezon+Ave,+Dipolog+City,+Zamboanga+del+Norte/@8.5820256,123.2572118,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3254960d1b3ac5ad:0xbe9ee98aa01bd4be!2m2!1d123.3396137!2d8.5820343?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+                            <img src="place1.jpg" alt="" class="place__img">
+                        
+                            <div class="place__content">
+                                <span class="place__rating">
+                                    <i class="ri-star-line place__rating-icon"></i>
+                                    <span class="place__rating-number">4.5</span>
+                                </span>
+
+                                <div class="place__data">
+                                    <h3 class="place__title">UrChoice Bistro Cafe</h3>
+                                    <span class="place__price">0933 275 4010</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <a href="https://www.google.com/maps/dir//Corner+Aguilar+Street+and+Zamboanga+del+Norte+PH,+Rizal+Avenue+Extension,+Arellano+St,+Dipolog+City,+7100/@8.5812828,123.2551211,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3254960d48a9e325:0xb8a89f876176fe9d!2m2!1d123.337523!2d8.5812915?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+                            <img src="place5.jpg" alt="" class="place__img">
+                        
+                            <div class="place__content">
+                                <span class="place__rating">
+                                    <i class="ri-star-line place__rating-icon"></i>
+                                    <span class="place__rating-number">4.2</span>
+                                </span>
+    
+                                <div class="place__data">
+                                    <h3 class="place__title">Chicken Ati-atihan</h3>
+                                    <span class="place__price">0930 028 1802</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="discover section" id="experience">
+                <h2 class="section__title">Festivals & Events</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="katkat.jpg" alt="Cathedral of Our Lady of the Most Holy Rosary" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">KATKAT SAKRIPISYO (3003 Steps to Linabo Peak, Dipolog City)</h2>
+                                <span class="discover__description"><b>GOOD FRIDAY</b><br>A spiritual trekking activity 
+                                    and re-enactment of the death and passion of Jesus Christ which gathers the 
+                                    Catholic community of Zamboanga del Norte and visitors.</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="pagsalabok.jpg" alt="" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">DIPOLOG P’GSALABUK FESTIVAL</h2>
+                                <span class="discover__description"><b>APRIL – MAY /JULY (Starts on the 3rd week of April)</b><br>
+                                    This festival starts on the 2nd week of May with lively ethnic street dancing, 
+                                    sports, concerts, pageant, cultural shows, etc. A major event includes the 
+                                    annual triathlon, where local and foreign participants race to the finish 
+                                    line in a series of swimming, marathon running and cycling. The entire 
+                                    celebration culminates on July 1st, Adlaw sa Dipolog (Dipolog Day).</span>
+                            </div>
+                        </div>
+                        
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="feast.jpg" alt="" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">FEAST IN HONOR OF ST. VINCENT FERRER</h2>
+                                <span class="discover__description"><b>MAY (On the 3rd Saturday of May)</b><br>
+                                    In celebration of the Dipolog City fiesta, locals hold a religious procession around 
+                                    the city’s major thoroughfares that ends at the church patio where devotees dance 
+                                    before the image of St. Vincent Ferrer, our patron saint, to the accompaniment of 
+                                    drum beats.</span>
+                            </div>
+                        </div>
+
+                        
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="adlaw.jpg" alt="" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">ADLAW SA DIPOLOG</h2>
+                                <span class="discover__description"><b>JUNE – JULY 1 (Starts on the last week of June)</b><br>
+                                    Dipolog City’s founding anniversary with inter- government agency sports activities, 
+                                    awarding and giving recognition to exemplary Dipolognons.</span>
+                            </div>
+                        </div>
+
+                        
+                        <!--==================== DISCOVER 5 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="dahunog.jpg" alt="" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">DAHUNOG SA DIPOLOG</h2>
+                                <span class="discover__description"><b>SEPT. – OCT. 7 (Starts on the last week of Sept.)</b><br>
+                                    Another festival of Dipolog, Dahunog sa Dipolog is an assemblage of interschool competitions 
+                                    highlighted with a parade band competition and the Miss Teen Tourism Dipolog pageant.. 
+                                    During the event the city streets resonate with the sounds played by the bands specially the 
+                                    drums, thereby, getting the name Dahunog sa Dipolog.</span>
+                            </div>
+                        </div>
+                        <!--==================== DISCOVER 6 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="rosary.jpg" alt="" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">FEAST OF OUR LADY OF THE HOLY ROSARY</h2>
+                                <span class="discover__description"><b>October 7</b><br>
+                                    The Marian celebration is celebrated for a month and 
+                                    ends with a Rosary Crusade at the city plaza on the 
+                                    31st of October in honor of Our Lady of the Rosary.</span>
+                            </div>
+                        </div>
+                        <!--==================== DISCOVER 7 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="pasko.jpg" alt="" class="discover__img">
+                            <div style="text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;" class="discover__data">
+                                <h2 class="discover__title">PASKO SA DIPOLOG (PASADI)</h2>
+                                <span class="discover__description"><b>December</b><br>
+                                    In preparation for Christmas, Dipolog holds nightly 
+                                    shows and adorns the streets and plazas with 
+                                    decorations and lights to inspire holiday spirit and unity.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2024 - 2025. All rigths reserved</p>
+                    <p class="footer__copy">DIPOLOG CITY</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">CLINT JAY A. RAMAYRAT</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line scrollup__icon"></i>
-    </a>
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
 
-    <!--=============== SCROLL REVEAL===============-->
-    <script src="scrollreveal.min.js"></script>
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="swiper-bundle.min.js"></script>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="main.js"></script>
-</body>
-
-</html>
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+    </html>
